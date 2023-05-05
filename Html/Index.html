@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Cinema</title>
+    <link href="../CSS/CommonCSS.css" type="text/css" rel="stylesheet" />
+    <link href="../CSS/MoviesCSS.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img class="Banner" title="Banner" src="../Images/banner2.jpg" alt="Nirma Cinema Banner">
+        <!--<iframe src="https://ia801400.us.archive.org/33/items/Q2_COMEDYCARTOON/custard_pie_capers.mp3" class="Music"></iframe>-->
+    </header>
+    <nav>
+        <a href="Index.html" class="MoviesPage">Movies</a>
+        <a href="NowShowing.html" class="NowShowingPage">NowShowing</a>
+        <a href="TicketPage.html" class="TicketPage">Ticket</a>
+        <a href="CinemaLocationPage.html" class="CinemaLocationPage">CinemaLocation</a>
+    </nav>
+    <p class="Heading1">Most Awaited Trailer</p>
+    <video id="Trailer" height="460" width="810" controls poster="../Images/dr-strange-multi-verse-of-madness.jpg">
+        <source src="https://www.youtube.com/watch?v=aWzlQ2N6qqg" type="video/mp4">
+    </video>
+    <br>
+    <!--<input onclick="Unmute()" type="image" id="Unmute" src="../Images/icon-unmute.png" alt="UnMuteButton">
+    <input onclick="Mute()" type="image" id="Mute" src="../Images/icon-mute.png" alt="MuteButton">
+    <button onclick="Pause_Play()" type="button" id="Pause_Play">Pause Video</button>-->
+    <p class="Heading1">Top Movies</p>
+    <p class="Heading2">Now Showing</p>
+    <div class="Movies">
+        <figure>
+            <a href="https://www.youtube.com/watch?v=Qah9sSIXJqk"><img title="KGF2" src="../Images/kgf2.jpg" alt="KGF2 Movie Poster" class="SizeofMoviePoster"></a>
+            <figcaption>
+                <h3 class="Heading3" onclick="ChangeVideo(0)"><a href="https://www.youtube.com/watch?v=Qah9sSIXJqk">KGF2</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>Prashanth Neel</li>
+                        <li><span class="SmallHeading">Stars - </span>Yash, Sanjay Dutt, Raveena Tandon, Srinidhi Shetty and Prakash Raj.</li>
+                        <li>K.G.F: Chapter 2 is a 2022 Indian Kannada-language period action film written and directed by Prashanth Neel, and produced by Vijay Kiragandur under the banner Hombale Films. The second instalment in a two-part series, it serves as a sequel to the 2018 film K.G.F: Chapter 1.</li>
+                    </ul>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.youtube.com/watch?v=Gs9TQr1D9Ps"><img title="Pushpa" src="../Images/Pushpa.jpg" alt="Pushpa Movie Poster" class="SizeofMoviePoster"></a>
+            <figcaption>
+                <h3 class="Heading3" onclick="ChangeVideo(1)"><a href="https://www.youtube.com/watch?v=Gs9TQr1D9Ps">Pushpa</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>Sukumar</li>
+                        <li><span class="SmallHeading">Stars - </span>Allu Arjun,Rashmika Mandanna ,Jagadeesh Prathap Bandari, Sunil, Rao Ramesh, Dhananjaya, Anasuya Bharadwaj, Ajay and Ajay Ghosh </li>
+                        <li>Pushpa: The Rise – Part 01 is a 2021 Indian Telugu-language action drama film[6] written and directed by Sukumar. Produced by Mythri Movie Makers in association with Muttamsetty Media, it stars Allu Arjun as the titular character alongside Fahadh Faasil (his Telugu debut), and Rashmika Mandanna.</li>
+                    </ul>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.youtube.com/watch?v=NgBoMJy386M"><img title="RRR" src="../Images/RRR.jpg" alt="RRR Movie Poster" class="SizeofMoviePoster"></a>
+            <figcaption>
+                <h3 class="Heading3" onclick="ChangeVideo(2)"><a href="https://www.youtube.com/watch?v=NgBoMJy386M">RRR</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>S. S. Rajamouli</li>
+                        <li><span class="SmallHeading">Stars - </span>N. T. Rama Rao Jr., Ram Charan, Ajay Devgn, Alia Bhatt, Shriya Saran, Samuthirakani, Ray Stevenson, Alison Doody, and Olivia Morris.</li>
+                        <li>RRR is a 2022 Indian Telugu-language epic period action drama film directed by S. S. Rajamouli who wrote the film with V. Vijayendra Prasad. It is produced by D. V. V. Danayya of DVV Entertainment. The film stars N. T. Rama Rao Jr., Ram Charan, Ajay Devgn, Alia Bhatt, Shriya Saran, Samuthirakani, Ray Stevenson, Alison Doody, and Olivia Morris.</li>
+                    </ul>
+            </figcaption>
+        </figure>
+    </div>
+    <p class="Heading2">Upcoming</p>
+    <div class="Movies">
+        <figure>
+            <a href="https://www.youtube.com/watch?v=aWzlQ2N6qqgr"><img title="Doctor Strange in the Multiverse of Madness" src="../Images/dr-strange-multi-verse-of-madness.jpg" alt="Doctor Strange in the Multiverse of Madness Movie Poster" class="SizeofMoviePoster"></a>
+            <figcaption>
+                <h3 onclick="ChangeVideo(3)"><a href="https://www.youtube.com/watch?v=aWzlQ2N6qqgr">Doctor Strange in the Multiverse of Madness</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>Sam Raimi</li>
+                        <li><span class="SmallHeading">Stars - </span> Benedict Cumberbatch , Elizabeth Olsen </li>
+                        <li>Doctor Strange in the Multiverse of Madness is a 2022 American superhero film based on the Marvel Comics character Doctor Strange</li>
+                    </ul>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://youtu.be/tgB1wUcmbbw"><img title="Thor love and thunder" src="../Images/thorloveandthunder.jpg" alt="Thor love and thunder" class="SizeofMoviePoster"></a>
+            <figcaption>
+                <h3 onclick="ChangeVideo(4)"><a href="https://youtu.be/tgB1wUcmbbw">Thor love and thunder</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>Taika Waititi</li>
+                        <li><span class="SmallHeading">Stars - </span>Natalie Portman, Tom Hiddleston, Anthony Hopkins, Stellan Skarsgård, Idris Elba.</li>
+                        <li>Thor: Love and Thunder is an upcoming American superhero film based on the Marvel Comics character Thor, produced by Marvel Studios and distributed by Walt Disney Studios.</li>
+                    </ul>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://youtu.be/MknKGdvuYKo"><img title="Avatar2" src="../Images/avatar2.jpg" alt="Avatar2" class="SizeofMoviePoster"></a>
+            <figcaption>
+                <h3 onclick="ChangeVideo(10)"><a href="https://youtu.be/MknKGdvuYKo">Avatar 2</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>James Cameron</li>
+                        <li><span class="SmallHeading">Stars - </span>Jack Black, Angelina Jolie, Dustin Hoffman</li>
+                        <li>Avatar: The Way of Water is an upcoming American epic science fiction film directed by James Cameron and produced by 20th Century Studios.</li>
+                    </ul>
+            </figcaption>
+        </figure>
+    </div>
+    <footer>
+        <div class="Logo">
+            <img class="Logo" title="Logo" src="../Images/logo1.jpg" alt="Nirma Cinema Logo">
+        </div>
+        <hr>Copyright 2022 @ <a href="DesignPage.html">HET & JINESH</a> All Rights Reserved.
+    </footer>
+    <script src="../JavaScript/Index.js"></script>
+</body>
+</html>

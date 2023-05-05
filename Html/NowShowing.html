@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Now Showing</title>
+    <link href="../CSS/CommonCSS.css" type="text/css" rel="stylesheet" />
+    <link href="../CSS/NowShowingCSS.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img class="Banner" title="Banner" src="../Images/banner2.jpg" alt="Animated Cinema Banner">
+        <iframe src="https://ia801400.us.archive.org/33/items/Q2_COMEDYCARTOON/custard_pie_capers.mp3" class="Music"></iframe>
+    </header>
+    <nav>
+        <a href="Index.html" class="MoviesPage">Movies</a>
+        <a href="NowShowing.html" class="NowShowingPage">NowShowing</a>
+        <a href="TicketPage.html" class="TicketPage">Ticket</a>
+        <a href="CinemaLocationPage.html" class="CinemaLocationPage">CinemaLocation</a>
+    </nav>
+    <form action="TicketPage.html" method=post class="form">
+        <img title="KGF2" src="../Images/kgf2.jpg" alt="KGF2 Poster" id="KGF2">
+        <fieldset>
+        <legend></legend>
+        <select name="Timing" id="Timing1">
+        </select>
+        <p></p>
+        <input type="submit" name="BuyTicket" value="Buy Ticket" onclick="MovieData(1)">
+        </fieldset>    
+        <img title="Pushpa" src="../Images/Pushpa.jpg" alt="Pushpa" id="Pushpa">
+        <fieldset>
+        <legend></legend>
+        <select name="Timing" id="Timing2">
+        </select>
+        <p></p>
+        <input type="submit" name="BuyTicket" value="Buy Ticket" onclick="MovieData(2)">
+        </fieldset>
+        <img title="RRR" src="../Images/RRR.jpg" alt="RRR Poster" id="RRR">
+        <fieldset>
+        <legend></legend>
+        <select name="Timing" id="Timing3">
+        </select>
+        <p></p>
+        <input type="submit" name="BuyTicket" value="Buy Ticket" onclick="MovieData(3)">
+        </fieldset>
+    </form>
+     <footer>
+        <div class="Logo">
+            <img class="Logo" title="Logo" src="../Images/logo1.jpg" alt="Nirma Cinema Logo">
+        </div>
+        <hr>Copyright 2022 @ <a href="DesignPage.html">HET & JINESH</a> All Rights Reserved.
+    </footer>
+     <script src="../JavaScript/Form.js"></script>
+     <script src="../JavaScript/BookingSystem.js"></script>
+</body>
+</html>
